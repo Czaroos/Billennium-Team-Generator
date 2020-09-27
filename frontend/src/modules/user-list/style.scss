@@ -1,0 +1,84 @@
+.userList-step-1 {
+  width: 80vw;
+  height: 100vh;
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 10px 0px 5px #000;
+  user-select: none;
+  opacity: 0.4;
+
+  > div {
+    opacity: 0.4;
+  }
+}
+
+.userList-step-2 {
+  user-select: auto;
+  opacity: 1;
+
+  > div {
+    opacity: 1;
+  }
+}
+
+.userList-step-3 {
+  z-index: 1;
+  user-select: none;
+  opacity: 0;
+}
+
+.you-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.users-section {
+  width: 100%;
+  max-height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+.userList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 60px;
+  overflow-y: scroll;
+}
+
+.heading-section {
+  width: 80%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

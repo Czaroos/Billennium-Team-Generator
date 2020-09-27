@@ -1,0 +1,30 @@
+.selectContainer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 100px 0;
+}
+
+.label {
+  font-size: 24px;
+  margin-right: 15px;
+  user-select: none;
+}
+
+.select {
+  width: 80%;
+  height: 28px;
+  padding: 0px 16px;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-size: 1.5em;
+  text-align-last: center;
+}
+
+.option {
+  color: black;
+  display: flex;
+  justify-content: center;
+}

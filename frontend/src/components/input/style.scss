@@ -1,0 +1,23 @@
+.inputContainer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 100px 0;
+}
+
+.label {
+  font-size: 24px;
+  margin-right: 15px;
+  user-select: none;
+}
+
+.input {
+  width: 80%;
+  padding: 0px 16px;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-size: 1.5em;
+  text-align: center;
+}
